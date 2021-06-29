@@ -19,9 +19,7 @@ export default function Index() {
       throw Error("Please enter an integer");
     }
     setSearchState({ ...searchState, status: "loading" });
-    fetch(
-      `https://jsonplaceholder.typicode.com/albums/${inputState.value}/photos`
-    )
+    fetch(`https://challenge-three.herokuapp.com/${inputState.value}`)
       .then((res) => {
         if (!res.ok) {
           setNotification({
@@ -52,10 +50,12 @@ export default function Index() {
   return (
     <div className="home">
       <Head>
-        <title>ChallengeTwo: Awesome Search bar with ReactJS</title>
+        <title>
+          ChallengeThree: Challenge two remastered(with custom backend)
+        </title>
       </Head>
       <header className="pt-6 pb-3">
-        <p className="title has-text-centered">ChallengeTwo</p>
+        <p className="title has-text-centered">ChallengeThree</p>
         <p className="subtitle has-text-centered">
           by
           <a
