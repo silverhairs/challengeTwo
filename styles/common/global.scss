@@ -1,0 +1,24 @@
+html {
+  height: 100%;
+  body,
+  .home {
+    min-height: 100vh !important;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    #__next {
+      height: 100%;
+    }
+    p {
+      line-height: normal;
+    }
+  }
+}
+
+.notification {
+  max-width: 500px;
+}
